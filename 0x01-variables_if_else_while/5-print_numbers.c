@@ -6,10 +6,6 @@
  */
 int main(void)
 {
-    return (0);
-}
-int main(void)
-{
 int i = 0;
 while (i < 10)
 {
