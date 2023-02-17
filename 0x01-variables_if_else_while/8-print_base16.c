@@ -16,5 +16,6 @@ for (ch2 = 'a'; ch2 <= 'f'; ch2 = ch2 + 1)
 {
 putchar(ch2);
 }
+putchar('\n');
 return (0);
 }
