@@ -1,12 +1,18 @@
-
+include "main.h"
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * print_alphabet - print alphabet 10 times
  */
-int main(void)
+
+void print_alphabet_x10(void)
 {
-    print_alphabet_x10();
-    return (0);
+char ch1 = 'a';
+for (int i = 1; i <= 10; i += 1)
+{
+for (ch1 = 'a'; ch1 <= 'z'; ch1 += 1)
+{
+_putchar(ch1);
+}
+}
+_putchar('\n');
 }
