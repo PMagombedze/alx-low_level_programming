@@ -6,7 +6,6 @@ include "main.h"
 
 void print_alphabet_x10(void)
 {
-int i = 1;
 char ch1 = 'a';
 for (ch1 = 'a'; ch1 <= 'z'; ch1 += 1)
 {
