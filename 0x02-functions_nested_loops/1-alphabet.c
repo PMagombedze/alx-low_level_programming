@@ -1,15 +1,9 @@
 #include "main.h"
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-
 
 /**
  * print_alphabet - print alphabet
  */
-void print_alphabet(void) 
+void print_alphabet(void)
 {
 char ch1 = 'a';
 for (ch1 = 'a'; ch1 <= 'z'; ch1 += 1)
