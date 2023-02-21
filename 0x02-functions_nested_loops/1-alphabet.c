@@ -5,11 +5,6 @@
  *
  * Return: Always 0.
  */
-int main(void)
-{
-print_alphabet();
-return (0);
-}
 
 void print_alphabet(void)
 {
@@ -19,4 +14,10 @@ for (ch1 = 'a'; ch1 <= 'z'; ch1 += 1)
 _putchar(ch1);
 }
 _putchar('\n');
+}
+
+int main(void)
+{
+print_alphabet();
+return (0);
 }
