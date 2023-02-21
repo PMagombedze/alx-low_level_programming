@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void putChar(name)
+void putChar()
 {
-char name[];
+char name[] = "_putchar";
 printf("%s\n", name);
 }
 
