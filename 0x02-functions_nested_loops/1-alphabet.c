@@ -5,7 +5,7 @@
  * Return: Always 0.
  */
 
-void print_alphabet(void)
+void print_alphabet(void) /* alphabet function */
 {
 char ch1 = 'a';
 for (ch1 = 'a'; ch1 <= 'z'; ch1 += 1)
