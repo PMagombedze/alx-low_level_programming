@@ -15,5 +15,4 @@ for (ch1 = 'a'; ch1 <= 'z'; ch1 += 1)
 _putchar(ch1);
 }
 }
-return (0);
 }
