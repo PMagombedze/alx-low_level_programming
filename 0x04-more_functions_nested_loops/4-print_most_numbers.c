@@ -12,8 +12,8 @@ for (i = '0'; i <= '9'; i += 1)
 if ((i == '2') && (i == '4'))
 {
 continue;
-_putchar(i);
 }
+_putchar(i);
 }
 _putchar('\n');
 }
