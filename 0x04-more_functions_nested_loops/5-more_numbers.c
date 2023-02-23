@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * more_numbers - print 0 to 14 10 times
  */
@@ -13,7 +13,7 @@ for (j = 0; j <= 10; j += 1)
 {
 for (i = 0; i < 15; i += 1)
 {
-printf(i);
+_putchar(i + '0');
 }
 _putchar('\n');
 }
