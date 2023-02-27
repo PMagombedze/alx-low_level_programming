@@ -9,18 +9,18 @@ void print_rev(char *s)
 {
 int i;
 int j;
-int length;
-for (i = 0; s[i] != '\0'; ++i)
+int temp;
+i = 0;
+j = 0;
+while (s[i] != 0 )
 {
-
+j = j + 1;
 }
-i = length;
-for (j = length - i; j >= 0; j--)
+j = j - 1;
+while (j > i)
 {
-if (s[j] == ' ')
-{
-_putchar( &(s[j]) + 1);
+temp = s[j];
+s[j = j - 1] = s[i];
+s[i = i + 1] = temp;
 }
-}
-_putchar(s);
 }
