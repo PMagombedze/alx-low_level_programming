@@ -15,9 +15,7 @@ int j = n;
 if (j > 0)
 {
 for (i = 0; i < j; i++)
-{
 s[i] = b;
-}
 }
 return (s);
 }
