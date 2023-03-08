@@ -7,9 +7,10 @@
  * Return: 1 if true, 0 otherwise
  */
 
+int i = 2;
+
 int is_prime_number(int n)
 {
-int i = 2;
 return (my_prime(n, i + 1));
 }
 
@@ -22,7 +23,6 @@ return (my_prime(n, i + 1));
 
 int my_prime(int n, int i)
 {
-i = 2;
 if (n <= 2)
 {
 return (n == 2);
