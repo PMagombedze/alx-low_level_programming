@@ -18,6 +18,10 @@ else if ((n % 2) && (j % 3) != 0)
 {
 return (-1);
 }
+else if (n < 0)
+{
+return (-1);
+}
 else if ((n % 2) == 0)
 {
 return (n / _sqrt_recursion(n / 2));
