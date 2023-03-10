@@ -9,6 +9,9 @@
 
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-printf("%d", argc - 1);
+if (argc > 0)
+{
+printf("%d\n", argc - 1);
+}
 return (0);
 }
