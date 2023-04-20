@@ -28,7 +28,10 @@ printf("(nil)");
 }
 if (i < (n - 1))
 {
-separator ? printf("%s", separator) : printf("(nil)");
+if (separator)
+{
+printf("%s", separator);
+}
 }
 }
 printf("\n");
