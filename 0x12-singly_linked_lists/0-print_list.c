@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "lists.h"
-#include "_putchar.h"
 
 /**
  * print_list - prints elements
@@ -10,20 +9,13 @@
  */
 size_t print_list(const list_t *h)
 {
+unsigned int i = 0;
 const list_t *temp = h;
-size_t count = 0;
 while (temp != NULL)
 {
-if (temp->str != NULL)
-{
-printf("[%d] %s\n", temp->len, temp->str);
-}
-else
-{
-printf("[0] (nil)\n");
-}
-count += 1;
+temp->str != NULL ? printf("[%d] %s\n", temp->len, temp->str) : printf("[0] (nil)\n");
+i += 1;
 temp = temp->next;
 }
-return (count);
+return (i);
 }
