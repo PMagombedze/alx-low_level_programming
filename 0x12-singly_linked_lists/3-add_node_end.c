@@ -6,29 +6,35 @@
  * @head: head pointer
  * @str: string to be duplicated
  *
- * Return: address of new element, NULL otherwise
+ * Return: address of newNode element, NULL otherwise
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
 char *j;
 unsigned int i = 0;
 list_t *newNode = malloc(sizeof(list_t));
-list_t *lastNode = *head;
+list_t *temp = *head;
+while (str[i])
+{
+i++;
+}
+if (!newNode)
+{
+return (NULL);
+}
+j = strdup(str);
+newNode->str = j;
 newNode->len = i;
 newNode->next = NULL;
 if (*head == NULL)
 {
 *head = newNode;
+return (newNode);
 }
-else
+while (temp->next)
 {
-j = strdup(str);
-newNode->str = j;
-while (lastNode->next != NULL)
-{
-lastNode = lastNode->next;
+temp = temp->next;
 }
-lastNode->next = newNode;
-}
+temp->next = newNode;
 return (newNode);
 }
