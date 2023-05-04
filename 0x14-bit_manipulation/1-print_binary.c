@@ -8,18 +8,15 @@
  */
 void print_binary(unsigned long int n)
 {
-int i, arr[32];
-if (n == 0)
+int i = 1;
+unsigned long int b = 0;
+size_t remainder;
+while (n != 0)
 {
-printf("0");
+remainder = n % 2;
+n /= 2;
+b += i * remainder;
+i *= 10;
 }
-for (i = 0; n > 0; i++)
-{
-arr[i] = n % 2;
-n = n / 2;
-}
-for (i = i - 1; i >= 0; i--)
-{
-printf("%u", arr[i]);
-}
+printf("%ld", b);
 }
