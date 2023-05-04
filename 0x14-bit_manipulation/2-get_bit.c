@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - convery binary to integer
+ * get_bit - convert binary to integer
  * @n: integer
  * @index: index
  *
