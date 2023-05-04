@@ -8,15 +8,19 @@
  */
 void print_binary(unsigned long int n)
 {
-int i = 1;
-unsigned long int b = 0;
-size_t remainder;
-while (n != 0)
+int j;
+unsigned long int i;
+if (n == 0)
 {
-remainder = n % 2;
-n /= 2;
-b += i * remainder;
-i *= 10;
+printf("0");
+return;
 }
-printf("%ld", b);
+for (i = n, j = 0; (i >>= 1) > 0; j++)
+{
+;
+}
+for (; j >= 0; j--)
+{
+(1 & (n >> j)) ? printf("1") : printf("0");
+}
 }
