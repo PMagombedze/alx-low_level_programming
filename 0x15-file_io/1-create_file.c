@@ -27,8 +27,11 @@ while (text_content[n])
 {
 n++;
 }
-w = write(fd, text_content, nletters);
-w == -1? return (-2) : close(fd);
+w = write(fd, text_content, n);
+if (w == -1)
+{
+return (-2);
+}
 close(fd);
 return (1);
 }
