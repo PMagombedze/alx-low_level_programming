@@ -15,7 +15,7 @@ if (filename == NULL)
 {
 return (-1);
 }
-if (text_content !=NULL)
+if (text_content != NULL)
 {
 while (text_content[count])
 {
@@ -24,7 +24,7 @@ count += 1;
 }
 op = open(filename, O_WRONLY | O_APPEND);
 wr = write(op, text_content, count);
-if ( wr == -1 || op == -1)
+if (wr == -1 || op == -1)
 {
 return (-1);
 }
