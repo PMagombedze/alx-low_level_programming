@@ -2,10 +2,10 @@
 
 /**
  * add_dnodeint - add node node at beginning
- * @hdead: hdead pointer
+ * @head: head pointer
  * @n: value
  *
- * Return: address of node element, othderwise null
+ * Return: address of node element, otherwise null
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
